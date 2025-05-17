@@ -15,13 +15,12 @@
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr( bloginfo('name') ); ?>" class="logo-img">
 						<?php esc_attr( bloginfo('name') ); ?>
 					</a>
-
-				<?php // SEO Hidden Title
-
-				if ( true === ashe_options( 'title_tagline_seo_title' ) ) {
-					echo ( is_home() || is_front_page() || is_category() || is_search() ) ? '<h1 style="display: none;">'.  get_bloginfo( 'title' ) .'</h1>' : '';
-				}
-
+				
+				<!-- SEO Hidden Title -->
+				<?php 
+				// if ( true === ashe_options( 'title_tagline_seo_title' ) ) {
+				// 	echo ( is_home() || is_front_page() || is_category() || is_search() ) ? '<h1 style="display: none;">'.  get_bloginfo( 'title' ) .'</h1>' : '';
+				// }
 				?>
 
 				<?php else : ?>

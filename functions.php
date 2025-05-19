@@ -24,3 +24,7 @@ function get_smart_image( $attachment_id, $size = 'full', $icon = false ) {
     return wp_get_attachment_image_src( $attachment_id, $size, $icon );
 }
 
+// Remplacer les titres de produits en H3 dans les boucles WooCommerce
+function woocommerce_template_loop_product_title() {
+    echo wp_kses_post( '<h3 class="woocommerce-loop-product__title">' . get_the_title() . '</h3>' );
+}

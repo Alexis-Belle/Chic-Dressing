@@ -84,11 +84,11 @@ $slider_data .= '}';
 
 						<?php if( $repeater_item->title !== '' ) : ?>
 							<?php if ( $repeater_item->link !== '' ) : ?>
-								<h2 class="slider-title">
+								<h3 class="slider-title">
 									<a href="<?php echo esc_url( $repeater_item->link ); ?>"><?php echo $repeater_item->title; ?></a>	
-								</h2>
+								</h3>
 							<?php else: ?>
-								<h2 class="slider-title"><?php echo $repeater_item->title; ?></h2>
+								<h3 class="slider-title"><?php echo $repeater_item->title; ?></h3>
 							<?php endif; ?>
 						<?php endif; ?>
 

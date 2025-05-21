@@ -29,3 +29,12 @@ function woocommerce_template_loop_product_title() {
     echo wp_kses_post( '<h3 class="woocommerce-loop-product__title">' . get_the_title() . '</h3>' );
 }
 
+// Applique un filtre pour modifier les balises des titres de widgets
+add_filter( 'dynamic_sidebar_params', 'chicdressing_widget_titles_h4' );
+function chicdressing_widget_titles_h4( $params ) {
+    // Remplace les balises de titre par <h4>
+    $params[0]['before_title'] = '<h4 class="widget-title">';
+    $params[0]['after_title']  = '</h4>';
+    return $params;
+}
+

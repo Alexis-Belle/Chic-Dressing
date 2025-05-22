@@ -89,9 +89,9 @@ $slider_data .= '}';
 						</div> 
 						<?php endif; ?>
 						
-						<h3 class="slider-title"> 
+						<h2 class="slider-title"> 
 							<a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_title(); ?></a>	
-						</h3>
+						</h2>
 						
 						<div class="slider-content"><?php ashe_excerpt( 30 ); ?></div>
 						

@@ -1,7 +1,7 @@
 
 body .page-content, .page-content select, .page-content input, .page-content textarea, .page-content .post-author a, .page-content .ashe-widget a, .page-content .comment-author {
     color: #494949;
-    font-size: 14px;
+    font-size: 14px !important;
 }
 
 
@@ -47,4 +47,13 @@ body .header-logo a{
 #chic-products ul.products li.product{
     background: #f6f6f6;
     padding-bottom: 20px;
+}
+
+.post-date, .rpwwt-post-categories {
+    color:#757575 !important;
+}
+
+.post-categories a {
+    font-size: 14px !important;
+    padding: 4px 6px;
 }
